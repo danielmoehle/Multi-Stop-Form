@@ -13,6 +13,7 @@ body {
     /* margin: auto; */
     margin-top: 3vh;
     display: flex;
+    display: none;
 }
 
 .formSteps {
@@ -42,10 +43,15 @@ body {
     margin-top: 40px;
     margin-left: 30px;
     color: white;
+    background-color: rgb(56, 68, 235);
     justify-content: center;
     align-items: center;
     /* margin-bottom: -10px; */
+}
 
+#step1 {
+    color: black;
+    background-color: white;
 }
 
 .stepOne {
@@ -111,4 +117,45 @@ body {
     border-radius: 5px;
     background-color: rgb(22, 6, 94);
     color: white;
+}
+
+.nextStepButton:hover {
+    background-color: rgb(32, 9, 134);
+}
+
+.nextStepButton:active {
+        background-color: rgb(44, 15, 170);
+
+}
+
+
+/* Second Step Css */
+
+
+.secondStepScreen {
+    width: 60vw;
+    height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    /* margin: auto; */
+    margin-top: 3vh;
+    display: flex;
+    /* display: none; */
+}
+
+#step1 {
+    background-color: rgb(56, 68, 235);
+    color: white;
+}
+
+#step2 {
+    background-color: white;
+    color: black;
+}
+
+.selectPlan {
+    background-color: white;
+    margin-top: 2%;
+    width: 68%;
+    height: 94%;
 }
