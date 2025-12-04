@@ -13,7 +13,7 @@ body {
     /* margin: auto; */
     margin-top: 3vh;
     display: flex;
-    display: none;
+    /* display: none; */
 }
 
 .formSteps {
@@ -140,7 +140,7 @@ body {
     /* margin: auto; */
     margin-top: 3vh;
     display: flex;
-    /* display: none; */
+    display: none;
 }
 
 #step1 {
