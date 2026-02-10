@@ -75,10 +75,106 @@
             </div>
 
         </div>
-        <div class="selectPlan">
-                <p>Select Your Plan</p>
+        <div class="selectPlanDiv">
+                <p class="selectPlanTitle">Select Your Plan</p>
+                <p class="selectPlanDesc">You have the option of monthly or yearly billing.</p>
+                <button class="selectPlan" id="arcade"><span class="selectPlanImg"><img src="icon-arcade.svg" alt=""></span><span class="planTitle">Arcade</span><br><span class="monthlyCost">$9/mo</span></button>
+                <button class="selectPlan" id="advanced"><span class="selectPlanImg"><img src="icon-advanced.svg" alt=""></span><span class="planTitle">Advanced</span><br><span class="monthlyCost">$12/mo</span></button>
+                <button class="selectPlan" id="pro"><span class="selectPlanImg"><img src="icon-pro.svg" alt=""></span><span class="planTitle">Pro</span><br><span class="monthlyCost">$15/mo</span></button>
+                <input type="checkbox" id="toggle-Switch" class="month-year">
+                <label for="toggle-Switch" class="switch"><span class="monthly">Monthly</span><span class="yearly">Yearly</span></label>
+                <button class="nextStepButton">Next Step</button>
+            </div>
+    </div>
+            <!-- start of third step -->
+     <div class="thirdStepScreen">
+            <div class="formSteps">
+            <div class="stepOne">
+            <p class="steps" id="step1">1</p>
+            <p class="smallFont">STEP 1 <br><span class="bold">YOUR INFO</span></p>
             </div>
 
+            <div class="stepOne">
+            <p class="steps" id="step2">2</p>
+            <p class="smallFont">STEP 2 <br><span class="bold">SELECT PLAN</span></p>
+            </div>
 
+            <div class="stepOne">
+            <p class="steps" id="step3">3</p>
+            <p class="smallFont">STEP 3 <br><span class="bold">ADD-ONS</span></p>
+            </div>
+
+            <div class="stepOne">
+            <p class="steps" id="step4">4</p>
+            <p class="smallFont">STEP 4 <br><span class="bold">SUMMARY</span></p>
+            </div>
+            </div>
+            <div class="selectAdOnsDiv">
+                <p class="adOnTitle">Pick add-ons<br><Span class="adOnSubTitle">Add-ons help enhance your gaming experience</Span></p>
+                <label for="adOnCheckbox1">
+                <p class="adOns firstAdOn"><input type="checkbox" class="adOnCheckbox" id="adOnCheckbox1">Online service<br>
+                    <span  class="adOnDesc">Access multiplayer games</span>
+                </p>
+                </label>
+                
+                <label for="adOnCheckbox2">
+                <p class="adOns"><input type="checkbox" class="adOnCheckbox" id="adOnCheckbox2">Larger storage<br>
+                    <span class="adOnDesc">Extra 1TB of cloud space</span>
+                </p>
+                </label>
+
+                <label for="adOnCheckbox3">
+                <p class="adOns"><input type="checkbox" class="adOnCheckbox" id="adOnCheckbox3">Customizable profile<br>
+                    <span class="adOnDesc">Custom themes on your profile</span>
+                </p>
+                </label>
+                <button class="nextStepButton">Next Step</button>
+                <!-- <div>
+                <button class="backButton">Go Back</button>
+                <button class="nextStepButton">Next Step</button>
+                </div> -->
+                
+            </div>
+    </div>
+
+    <!-- final step -->
+    <div class="finalStepScreen">
+        <div class="formSteps">
+            <div class="stepOne">
+            <p class="steps" id="step1">1</p>
+            <p class="smallFont">STEP 1 <br><span class="bold">YOUR INFO</span></p>
+            </div>
+
+            <div class="stepOne">
+            <p class="steps" id="step2">2</p>
+            <p class="smallFont">STEP 2 <br><span class="bold">SELECT PLAN</span></p>
+            </div>
+
+            <div class="stepOne">
+            <p class="steps" id="step3">3</p>
+            <p class="smallFont">STEP 3 <br><span class="bold">ADD-ONS</span></p>
+            </div>
+
+            <div class="stepOne">
+            <p class="steps" id="step4">4</p>
+            <p class="smallFont">STEP 4 <br><span class="bold">SUMMARY</span></p>
+            </div>
+
+        </div>
+        <div class="finishingUp">
+            <div class="finalStepTitleDiv">
+            <p class="finalStepTitle">Finishing up<br><span class="finalStepDesc">Double-check everything looks OK before confirming.</span></p>
+            </div>
+            <div class="confirmingPlanDiv">
+                <p class="confirmPlanHeader">Arcade<span> (Monthly)</span><span class="monthlyPrice">$9/mo</span></p>
+                <button class="changePlanButton">Change</button>
+                <p class="ConfirmAdOns">Online services <span class="monthlyPrice">+$1/mo</span></p>
+                <p class="ConfirmAdOns">Larger Storage <span class="monthlyPrice" id="storagePrice">+$2/mo</span></p>
+                <p class="totalPriceTitle">Total <span class="totalPrice">$12/mo</span></p>
+            </div>
+            <button class="finishButton">Finish</button>
+            </div>
+            
+    </div>
 </body>
 </html>
