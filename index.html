@@ -8,7 +8,8 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="firstStepScreen">
+<div class="mainContainer">
+    <div class="firstStepScreen" id="firstStepScreenDiv">
         <div class="formSteps">
             <div class="stepOne">
             <p class="steps" id="step1">1</p>
@@ -16,17 +17,17 @@
             </div>
 
             <div class="stepOne">
-            <p class="steps">2</p>
+            <p class="steps" id="step2">2</p>
             <p class="smallFont">STEP 2 <br><span class="bold">SELECT PLAN</span></p>
             </div>
 
             <div class="stepOne">
-            <p class="steps">3</p>
+            <p class="steps" id="step3">3</p>
             <p class="smallFont">STEP 3 <br><span class="bold">ADD-ONS</span></p>
             </div>
 
             <div class="stepOne">
-            <p class="steps">4</p>
+            <p class="steps" id="step4">4</p>
             <p class="smallFont">STEP 4 <br><span class="bold">SUMMARY</span></p>
             </div>
 
@@ -35,24 +36,24 @@
             <p class="steps">4</p> -->
             
         </div>
-        <div class="personalInfo">
+        <div class="personalInfo" id="personalInfoid">
            <p class="personalInfoTitle">Personal info</p> 
            <p class="personalInfoDesc">Please provide your name, email address, and phone number.</p>
 
            <div class="inputAndTitles">
             <p class="inputTitles">Name</p>
-            <input class="inputs" type="text" placeholder="e.g. Michael Royappa">
+            <input class="inputs" type="text" placeholder="e.g. Michael Royappa" required>
             <p class="inputTitles">Email</p>
             <input class="inputs" type="email" placeholder="e.g. michaelroyappa@lorem.com">
             <p class="inputTitles">Phone Number</p>
             <input class="inputs" type="number" placeholder="e.g. +1 234 567 890">
            </div>
-           <button class="nextStepButton">Next Step</button>
+           <!-- <button type="submit" class="nextStepButton" id="firstStepButtonid">Next Step</button> -->
         </div>
     </div>
     <!-- start of second step -->
 
-    <div class="secondStepScreen">
+    <div class="secondStepScreen" id="secondStepScreenDiv">
         <div class="formSteps">
             <div class="stepOne">
             <p class="steps" id="step1">1</p>
@@ -75,7 +76,7 @@
             </div>
 
         </div>
-        <div class="selectPlanDiv">
+        <div class="selectPlanDiv" id="selectPlanDivid">
                 <p class="selectPlanTitle">Select Your Plan</p>
                 <p class="selectPlanDesc">You have the option of monthly or yearly billing.</p>
                 <button class="selectPlan" id="arcade"><span class="selectPlanImg"><img src="icon-arcade.svg" alt=""></span><span class="planTitle">Arcade</span><br><span class="monthlyCost">$9/mo</span></button>
@@ -83,11 +84,11 @@
                 <button class="selectPlan" id="pro"><span class="selectPlanImg"><img src="icon-pro.svg" alt=""></span><span class="planTitle">Pro</span><br><span class="monthlyCost">$15/mo</span></button>
                 <input type="checkbox" id="toggle-Switch" class="month-year">
                 <label for="toggle-Switch" class="switch"><span class="monthly">Monthly</span><span class="yearly">Yearly</span></label>
-                <button class="nextStepButton">Next Step</button>
+                <!-- <button class="nextStepButton" id="secondStepButtonid">Next Step</button> -->
             </div>
     </div>
             <!-- start of third step -->
-     <div class="thirdStepScreen">
+     <div class="thirdStepScreen" id="thirdStepScreenDiv">
             <div class="formSteps">
             <div class="stepOne">
             <p class="steps" id="step1">1</p>
@@ -109,7 +110,7 @@
             <p class="smallFont">STEP 4 <br><span class="bold">SUMMARY</span></p>
             </div>
             </div>
-            <div class="selectAdOnsDiv">
+            <div class="selectAdOnsDiv" id="selectAdOnsDivid">
                 <p class="adOnTitle">Pick add-ons<br><Span class="adOnSubTitle">Add-ons help enhance your gaming experience</Span></p>
                 <label for="adOnCheckbox1">
                 <p class="adOns firstAdOn"><input type="checkbox" class="adOnCheckbox" id="adOnCheckbox1">Online service<br>
@@ -128,7 +129,7 @@
                     <span class="adOnDesc">Custom themes on your profile</span>
                 </p>
                 </label>
-                <button class="nextStepButton">Next Step</button>
+                <!-- <button class="nextStepButton" id="thirdStepButtonid">Next Step</button> -->
                 <!-- <div>
                 <button class="backButton">Go Back</button>
                 <button class="nextStepButton">Next Step</button>
@@ -138,7 +139,7 @@
     </div>
 
     <!-- final step -->
-    <div class="finalStepScreen">
+    <div class="finalStepScreen" id="finalStepScreenDiv">
         <div class="formSteps">
             <div class="stepOne">
             <p class="steps" id="step1">1</p>
@@ -172,9 +173,17 @@
                 <p class="ConfirmAdOns">Larger Storage <span class="monthlyPrice" id="storagePrice">+$2/mo</span></p>
                 <p class="totalPriceTitle">Total <span class="totalPrice">$12/mo</span></p>
             </div>
-            <button class="finishButton">Finish</button>
+            <button class="finishButton" id="submitButtonid">Finish</button>
             </div>
             
+    </div>
+    
+    <!-- <div class="nextButtonDiv"></div> -->
+     
+     </div>
+     <div class="ButtonsDiv">
+        <button class="goBackButton" id="goBackButtonid">Go back</button>
+        <button class="nextStepButton" id="firstStepButtonid">Next Step</button>
     </div>
 </body>
 </html>
